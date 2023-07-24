@@ -1,6 +1,8 @@
 ---
 const {
   title,
+  subtitle,
+  date,
   img,
   desc,
   url,
@@ -31,15 +33,15 @@ import { Image } from "@astrojs/image/components";
         )
       }
       <div class="grow w-full p-5 md:p-0">
-        <h1 class="text-xl font-bold">
+        <h1 class="text-lg">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
         <div>
-          <span class="text-xl mr-1"> {pricing}</span>
+          <span class="text-lg mr-1"> {subtitle}</span>
           <span class="text-md opacity-50 line-through">{oldPricing}</span>
         </div>
-        <p class="py-1 text-1xl">{desc}</p>
+        <p class="py-1 text-lg">{desc}</p>
       </div>
     </div>
   </a>

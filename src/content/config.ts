@@ -11,6 +11,7 @@ const blogSchema = z.object({
 
 const problemSchema = z.object({
     title: z.string(),
+    subtitle: z.string(),
     description: z.string(),
     custom_link_label: z.string(),
     custom_link: z.string().optional(),

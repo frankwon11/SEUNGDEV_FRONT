@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  entry: CollectionEntry<"store">;
+  entry: CollectionEntry<"problems">;
 }
 
 const { entry } = Astro.props;
@@ -22,6 +22,7 @@ const { Content } = await entry.render();
 
 <ProblemLayout
   title={problem.title}
+  subtitle={problem.subtitle}
   description={problem.description}
   heroImage={problem.heroImage}
   updatedDate={problem.updatedDate}
